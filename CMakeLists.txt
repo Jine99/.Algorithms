@@ -7,7 +7,7 @@ set(CMAKE_CXX_COMPILER "C:/MinGW/bin/g++.exe")
 
 # C++ 17 표준 사용
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD_REQUIRED On)
 
 # 모버그용 메시지 추가
 message(STATUS "Searching for source files...")

@@ -16,10 +16,8 @@
             "CURRENT_FILE": "${file}"
           }
         },
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        }
+        "group": "build",
+        "problemMatcher": []
       },
       {
         "type": "cppbuild",
@@ -36,8 +34,13 @@
         "options": {
           "cwd": "C:/MinGW/bin"
         },
-        "problemMatcher": ["$gcc"],
-        "group": "build",
+        "problemMatcher": [
+          "$gcc"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
         "detail": "컴파일러: C:/MinGW/bin/g++.exe"
       }
     ]

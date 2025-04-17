@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//이거 존나쉬운거임 이거못하면 접으셈
+
 void insert(int idx, int num, int arr[], int& len) {
     for (int i = len; i > idx; i--) { arr[i] = arr[i - 1]; }
     arr[idx] = num;

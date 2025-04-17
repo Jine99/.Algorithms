@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//이거 존나쉬운거임 이거못하면 접으셈
 void insert(int idx, int num, int arr[], int& len) {
     for (int i = len++;i > idx; i--) arr[i] = arr[i - 1];
     arr[idx] = num;
@@ -36,7 +35,7 @@ void insert_test() {
     insert(1, 50, arr, len); // 10 50 20 30 40
     printArr(arr, len);
     insert(0, 15, arr, len); // 15 10 50 20 30 40
-    printArr(arr, len)
+    printArr(arr, len);
 }
 
 void erase_test() {

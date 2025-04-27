@@ -4,7 +4,7 @@
 
 ## 📊 Current Status
 <p align="center">
-  <a href="https://solved.ac/profile/anximusic7"><img height="180em" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=anximusic7"/></a>
+  <a href="https://solved.ac/profile/khkcejkms1"><img height="180em" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=khkcejkms1"/></a>
 </p>
 
 ## 🎯 Learning Progress

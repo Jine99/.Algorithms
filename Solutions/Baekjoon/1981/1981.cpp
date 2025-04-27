@@ -1,6 +1,8 @@
 // #include<iostream>
 // #include<queue>
 
+//vis[x][y] = min(vis[x][y], max(vis[prevx][prevy], abs(arr[prevx][prevy] - arr[x][y])));
+
 // using namespace std;
 
 // static int size(int a, int b, int c) {
@@ -87,4 +89,4 @@
 //     }
 //     cout << big - small;
 // }
-// 실패 다시 풀어보자
+// // 실패 다시 풀어보자

@@ -8,28 +8,18 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(0);
 
-    int a;
+    int N;
+    string str;
 
-    cin >> a;
+    cin >> N;
+    while (cin >> str) {
 
-    while (a--) {
         int num = 0;
-        int plus = 1;
-        string s;
-        cin >> s;
+        int plus = 0;
 
-        for (int i = 0; i < s.length(); i++) {
-            if (s[i] == 'X') {
-                plus = 1;
-                continue;
-            }
-            else {
-                num += plus;
-                plus++;
-            }
+        for (int i = 0; i < str.length(); i++) {
+            num += plus = str[i] - 79 ? 0 : ++plus;
         }
         cout << num << "\n";
     }
-
 }
-

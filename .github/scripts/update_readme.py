@@ -1,3 +1,5 @@
+# update_readme.py (Python 코드)
+
 import os
 import requests
 from datetime import datetime
@@ -26,7 +28,6 @@ class ProblemInfo:
 def fetch_problem_info(problem_numbers: List[str]) -> Dict[str, ProblemInfo]:
     problems = {}
     
-    # 100개씩 나누어 요청
     for i in range(0, len(problem_numbers), 100):
         batch = problem_numbers[i:i+100]
         query = ','.join(batch)
@@ -52,18 +53,15 @@ def collect_problems():
     }
     total_problems = set()
     
-    # 문제 수집
     solutions_dir = "Solutions/Baekjoon"
     problem_numbers = []
     
-    # 디렉토리 구조 확인 및 문제 번호 수집
     for item in os.listdir(solutions_dir):
         if item.isdigit():
             problem_numbers.append(item)
     
     problem_info = fetch_problem_info(problem_numbers)
     
-    # 문제 분류 및 통계
     for number in problem_numbers:
         if number in problem_info:
             info = problem_info[number]
@@ -73,7 +71,6 @@ def collect_problems():
                 difficulty_stats[difficulty] += 1
                 total_problems.add(number)
             
-            # 파일 경로 설정 (항상 문제 번호 디렉토리 사용)
             file_path = f"{number}/{number}.cpp"
             
             problem_data = {
@@ -83,7 +80,6 @@ def collect_problems():
                 'path': f"Solutions/Baekjoon/{file_path}"
             }
             
-            # 태그별로 분류
             for tag in info.tags:
                 if tag not in problems_by_tag:
                     problems_by_tag[tag] = []
@@ -117,14 +113,13 @@ def generate_current_focus():
 def generate_readme():
     problems_by_tag, difficulty_stats, total_count = collect_problems()
     
-    # 기본 README 구조
     readme_content = """<div align="center">
 
 ![header](https://capsule-render.vercel.app/api?type=transparent&color=39FF14&height=150&section=header&text=Algorithm%20Study&fontSize=70&animation=fadeIn&fontColor=39FF14&desc=Problem%20Solving%20Repository&descSize=25&descAlignY=75)
 
 ## 📊 Current Status
 <p align="center">
-  <a href="https://solved.ac/profile/anximusic7"><img height="180em" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=anximusic7"/></a>
+  <a href="https://solved.ac/profile/khkcejkms1"><img height="180em" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=khkcejkms1"/></a>
 </p>
 
 ## 🎯 Learning Progress
@@ -136,12 +131,10 @@ def generate_readme():
 
 """
     
-    # Current Focus 섹션 추가
     readme_content += generate_current_focus()
     
     readme_content += "\n## 🏃‍♂️ Problem Solving\n"
     
-    # 난이도 통계 추가
     readme_content += """### 🏅 Difficulty Stats
 <div align="center">
 
@@ -159,9 +152,8 @@ def generate_readme():
     
     readme_content += f"\n**Total Solved: {total_count} Problems**\n</div>\n\n"
     
-    # 문제 목록 추가
     for tag, problems in sorted(problems_by_tag.items()):
-        if not problems:  # 빈 카테고리 건너뛰기
+        if not problems:
             continue
             
         tag_display = tag.replace('_', ' ').title()
@@ -172,21 +164,17 @@ def generate_readme():
 
 """
         
-        # 문제 정렬 (난이도 -> 번호)
         sorted_problems = sorted(problems, key=lambda x: (x['difficulty'], x['number']))
         
-        # 문제 목록 추가 (두 줄 개행으로 변경)
         for prob in sorted_problems:
             readme_content += f"{prob['difficulty']} [{prob['name']} (BOJ {prob['number']})]({prob['path']})\n\n"
         
-        # 구현 테스트 파일이 있다면 추가
         test_path = f"Solutions/DataStructures/_Tests/{tag_display.replace(' ', '')}Test"
         if os.path.exists(test_path):
             readme_content += f"✅ [{tag_display} Implementation Test]({test_path}/{tag.lower()}_test.cpp)\n\n"
         
         readme_content += "</div>\n</details>\n\n"
     
-    # References 섹션 추가
     readme_content += """## 📚 References
 <p align="center">
   <a href="https://blog.encrypted.gg/category/강좌/실전%20알고리즘"><img src="https://img.shields.io/badge/BaaaaaaaaaaarkingDog_Algorithm_Lecture-11B48A?style=flat-square&logo=Vimeo&logoColor=white"/></a>
@@ -195,9 +183,8 @@ def generate_readme():
 
 </div>"""
     
-    # README 파일 쓰기
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme_content)
 
 if __name__ == "__main__":
-    generate_readme() 
+    generate_readme()

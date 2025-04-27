@@ -122,60 +122,7 @@ def generate_readme():
   <a href="https://solved.ac/profile/khkcejkms1"><img height="180em" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=khkcejkms1"/></a>
 </p>
 
-## 🎯 Learning Progress
-<p align="center">
-  <img src="https://img.shields.io/badge/Data_Structures-007396?style=for-the-badge&logo=java&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Algorithms-FF6B6B?style=for-the-badge&logo=TheAlgorithms&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Problem_Solving-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/>
-</p>
-
-"""
-    
-    readme_content += generate_current_focus()
-    
-    readme_content += "\n## 🏃‍♂️ Problem Solving\n"
-    
-    readme_content += """### 🏅 Difficulty Stats
-<div align="center">
-
-"""
-    
-    difficulty_names = {
-        '🥉': 'Bronze', '🥈': 'Silver', '🥇': 'Gold',
-        '💎': 'Platinum', '👑': 'Diamond', '🏆': 'Ruby'
-    }
-    
-    for emoji, name in difficulty_names.items():
-        count = difficulty_stats[emoji]
-        formatted_text = f"{emoji} {name}".ljust(30)
-        readme_content += f"`{formatted_text}` `{count}`\n"
-    
-    readme_content += f"\n**Total Solved: {total_count} Problems**\n</div>\n\n"
-    
-    for tag, problems in sorted(problems_by_tag.items()):
-        if not problems:
-            continue
-            
-        tag_display = tag.replace('_', ' ').title()
-        readme_content += f"""<details>
-<summary>{tag_display}</summary>
-
-<div align="center">
-
-"""
-        
-        sorted_problems = sorted(problems, key=lambda x: (x['difficulty'], x['number']))
-        
-        for prob in sorted_problems:
-            readme_content += f"{prob['difficulty']} [{prob['name']} (BOJ {prob['number']})]({prob['path']})\n\n"
-        
-        test_path = f"Solutions/DataStructures/_Tests/{tag_display.replace(' ', '')}Test"
-        if os.path.exists(test_path):
-            readme_content += f"✅ [{tag_display} Implementation Test]({test_path}/{tag.lower()}_test.cpp)\n\n"
-        
-        readme_content += "</div>\n</details>\n\n"
-    
-    readme_content += """## 📚 References
+## 📚 References
 <p align="center">
   <a href="https://blog.encrypted.gg/category/강좌/실전%20알고리즘"><img src="https://img.shields.io/badge/BaaaaaaaaaaarkingDog_Algorithm_Lecture-11B48A?style=flat-square&logo=Vimeo&logoColor=white"/></a>
   <a href="https://www.acmicpc.net/"><img src="https://img.shields.io/badge/Baekjoon_Online_Judge-0076C0?style=flat-square&logo=Baidu&logoColor=white"/></a>

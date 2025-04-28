@@ -32,6 +32,19 @@
 
 </details>
 <details>
+<summary><strong>🚀 Silver</strong></summary>
+
+| 문제번호 | 문제 | 개념 |
+| -------- | ----- | ---- |
+| 1406 | [에디터](./%EB%B0%B1%EC%A4%80/Silver/1406.%E2%80%85%EC%97%90%EB%94%94%ED%84%B0/README.md) | - |
+| 1874 | [스택 수열](./%EB%B0%B1%EC%A4%80/Silver/1874.%E2%80%85%EC%8A%A4%ED%83%9D%E2%80%85%EC%88%98%EC%97%B4/README.md) | - |
+| 1926 | [그림](./%EB%B0%B1%EC%A4%80/Silver/1926.%E2%80%85%EA%B7%B8%EB%A6%BC/README.md) | - |
+| 2164 | [카드2](./%EB%B0%B1%EC%A4%80/Silver/2164.%E2%80%85%EC%B9%B4%EB%93%9C2/README.md) | - |
+| 2579 | [계단 오르기](./%EB%B0%B1%EC%A4%80/Silver/2579.%E2%80%85%EA%B3%84%EB%8B%A8%E2%80%85%EC%98%A4%EB%A5%B4%EA%B8%B0/README.md) | - |
+| 4949 | [균형잡힌 세상](./%EB%B0%B1%EC%A4%80/Silver/4949.%E2%80%85%EA%B7%A0%ED%98%95%EC%9E%A1%ED%9E%8C%E2%80%85%EC%84%B8%EC%83%81/README.md) | - |
+
+</details>
+<details>
 <summary><strong>🚀 Gold</strong></summary>
 
 | 문제번호 | 문제 | 개념 |
@@ -46,19 +59,6 @@
 | 문제번호 | 문제 | 개념 |
 | -------- | ----- | ---- |
 | 6549 | [히스토그램에서 가장 큰 직사각형](./%EB%B0%B1%EC%A4%80/Platinum/6549.%E2%80%85%ED%9E%88%EC%8A%A4%ED%86%A0%EA%B7%B8%EB%9E%A8%EC%97%90%EC%84%9C%E2%80%85%EA%B0%80%EC%9E%A5%E2%80%85%ED%81%B0%E2%80%85%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95/README.md) | - |
-
-</details>
-<details>
-<summary><strong>🚀 Silver</strong></summary>
-
-| 문제번호 | 문제 | 개념 |
-| -------- | ----- | ---- |
-| 1406 | [에디터](./%EB%B0%B1%EC%A4%80/Silver/1406.%E2%80%85%EC%97%90%EB%94%94%ED%84%B0/README.md) | - |
-| 1874 | [스택 수열](./%EB%B0%B1%EC%A4%80/Silver/1874.%E2%80%85%EC%8A%A4%ED%83%9D%E2%80%85%EC%88%98%EC%97%B4/README.md) | - |
-| 1926 | [그림](./%EB%B0%B1%EC%A4%80/Silver/1926.%E2%80%85%EA%B7%B8%EB%A6%BC/README.md) | - |
-| 2164 | [카드2](./%EB%B0%B1%EC%A4%80/Silver/2164.%E2%80%85%EC%B9%B4%EB%93%9C2/README.md) | - |
-| 2579 | [계단 오르기](./%EB%B0%B1%EC%A4%80/Silver/2579.%E2%80%85%EA%B3%84%EB%8B%A8%E2%80%85%EC%98%A4%EB%A5%B4%EA%B8%B0/README.md) | - |
-| 4949 | [균형잡힌 세상](./%EB%B0%B1%EC%A4%80/Silver/4949.%E2%80%85%EA%B7%A0%ED%98%95%EC%9E%A1%ED%9E%8C%E2%80%85%EC%84%B8%EC%83%81/README.md) | - |
 
 </details>
 

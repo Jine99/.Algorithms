@@ -26,7 +26,7 @@ for site in root_dirs:
     if not os.path.isdir(site_path):
         continue
 
-    content += f"\n## 📚 {site}\n"
+    content += f"\n<div align='center'>\n## 📚 {site}\n</div>\n"
 
     for difficulty in sorted(os.listdir(site_path)):
         diff_path = os.path.join(site_path, difficulty)
@@ -92,4 +92,3 @@ content += """
 
 with open("README.md", "w", encoding="utf-8") as fd:
     fd.write(content)
-

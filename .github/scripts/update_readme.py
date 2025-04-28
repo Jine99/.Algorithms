@@ -33,6 +33,16 @@ def add_references_section():
 </p>
 """
 
+# 난이도별 이모지 매핑
+difficulty_emojis = {
+    "Bronze": "🥉",
+    "Silver": "🥈",
+    "Gold": "🥇",
+    "Platinum": "💎",
+    "Diamond": "👑",
+    "Ruby": "🏆"
+}
+
 def main():
     content = HEADER + CURRENT_STATUS  # HEADER와 CURRENT_STATUS 합치기
     root_dirs = ["백준", "프로그래머스"]
@@ -53,7 +63,10 @@ def main():
             if not os.path.isdir(diff_path):
                 continue
 
-            content += f"<details>\n<summary><strong>🚀 {difficulty}</strong></summary>\n\n"
+            # 난이도별 이모지 추가
+            emoji = difficulty_emojis.get(difficulty, "🚀")
+
+            content += f"<details>\n<summary><strong>{emoji} {difficulty}</strong></summary>\n\n"
             content += "| 문제번호 | 문제 | 개념 |\n"
             content += "| -------- | ----- | ---- |\n"
 
@@ -104,8 +117,4 @@ def main():
         # 📚 References 섹션 추가
         content += add_references_section()  # References 섹션을 함수로 추가
 
-    with open("README.md", "w", encoding="utf-8") as fd:
-        fd.write(content)
-
-if __name__ == "__main__":
-    main()
+    with open("README.md",

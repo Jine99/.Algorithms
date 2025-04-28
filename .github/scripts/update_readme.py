@@ -38,9 +38,15 @@ difficulty_emojis = {
     "Bronze": "🥉",
     "Silver": "🥈",
     "Gold": "🥇",
-    "Platinum": "🏆",
-    "Diamond": "💎",
-    "Ruby": "🌟"    
+    "Platinum": "💎",
+    "Diamond": "👑",
+    "Ruby": "🏆"
+}
+
+# 사이트 이름을 영문으로 변환할 매핑
+site_titles = {
+    "백준": "Baekjoon",
+    "프로그래머스": "Programmers"
 }
 
 def main():
@@ -55,8 +61,9 @@ def main():
         if not os.path.isdir(site_path):
             continue
 
-        # 📚 백준을 중앙 정렬하고 제목을 h2로 크기 조정
-        content += f"\n<div align='center'>\n<h2>📚 {site}</h2>\n</div>\n"
+        # 사이트 이름을 영문으로 변환
+        site_title = site_titles.get(site, site)  # 딕셔너리에 없으면 원래 폴더 이름 사용
+        content += f"\n<div align='center'>\n<h2>📚 {site_title}</h2>\n</div>\n"
 
         for difficulty in sorted(os.listdir(site_path), key=lambda x: difficulty_order.index(x) if x in difficulty_order else float('inf')):
             diff_path = os.path.join(site_path, difficulty)
@@ -64,7 +71,7 @@ def main():
                 continue
 
             # 난이도별 이모지 추가
-            emoji = difficulty_emojis.get(difficulty, "🌟")
+            emoji = difficulty_emojis.get(difficulty, "🚀")
 
             content += f"<details>\n<summary><strong>{emoji} {difficulty}</strong></summary>\n\n"
             content += "| 문제번호 | 문제 | 개념 |\n"

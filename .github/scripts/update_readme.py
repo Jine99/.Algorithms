@@ -16,7 +16,6 @@ CURRENT_STATUS = """
 <p align="center">
   <a href="https://solved.ac/profile/khkcejkms1"><img height="180em" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=khkcejkms1"/></a>
 </p>
-<hr>  <!-- 수평선 추가 -->
 """
 
 # 📚 References를 중앙 정렬하고 제목을 h2로 크기 조정하는 함수

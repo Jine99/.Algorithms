@@ -8,7 +8,7 @@ HEADER = """#
 # 백준, 프로그래머스 문제 풀이 목록
 """
 
-# HTML 코드 부분을 문자열로 포함
+# HTML 코드 부분을 문자열로 포함하고, '📊 Current Status'를 중앙 정렬
 CURRENT_STATUS = """
 ## 📊 Current Status
 <p align="center">

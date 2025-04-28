@@ -8,8 +8,16 @@ HEADER = """#
 # 백준, 프로그래머스 문제 풀이 목록
 """
 
+# HTML 코드 부분을 문자열로 포함
+CURRENT_STATUS = """
+## 📊 Current Status
+<p align="center">
+  <a href="https://solved.ac/profile/khkcejkms1"><img height="180em" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=khkcejkms1"/></a>
+</p>
+"""
+
 def main():
-    content = HEADER
+    content = HEADER + CURRENT_STATUS  # HEADER와 CURRENT_STATUS 합치기
     root_dirs = ["백준", "프로그래머스"]
 
     for site in root_dirs:

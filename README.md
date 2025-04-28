@@ -12,7 +12,7 @@
 </p>
 
 <div align='center'>
-<h2>📚 백준</h2>
+<h2>📚 Baekjoon</h2>
 </div>
 <details>
 <summary><strong>🥉 Bronze</strong></summary>
@@ -54,7 +54,7 @@
 
 </details>
 <details>
-<summary><strong>🏆 Platinum</strong></summary>
+<summary><strong>💎 Platinum</strong></summary>
 
 | 문제번호 | 문제 | 개념 |
 | -------- | ----- | ---- |

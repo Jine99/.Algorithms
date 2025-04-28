@@ -10,7 +10,7 @@
 <hr>  <!-- 수평선 추가 -->
 
 <div align='center'>
-## 📚 백준
+<h2>📚 백준</h2>
 </div>
 <details>
 <summary><strong>🚀 Bronze</strong></summary>
@@ -61,7 +61,9 @@
 </details>
 
 <div align="center">
-## 📚 References
+  <h2>📚 References</h2>
+</div>
+<p align="center">
   <a href="https://blog.encrypted.gg/category/강좌/실전%20알고리즘"><img src="https://img.shields.io/badge/BaaaaaaaaaaarkingDog_Algorithm_Lecture-11B48A?style=flat-square&logo=Vimeo&logoColor=white"/></a>
   <a href="https://www.acmicpc.net/"><img src="https://img.shields.io/badge/Baekjoon_Online_Judge-0076C0?style=flat-square&logo=Baidu&logoColor=white"/></a>
-</div>
+</p>

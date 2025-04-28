@@ -16,6 +16,15 @@ CURRENT_STATUS = """
 </p>
 """
 
+# References 부분 추가
+REFERENCES = """
+## 📚 References
+<p align="center">
+  <a href="https://blog.encrypted.gg/category/강좌/실전%20알고리즘"><img src="https://img.shields.io/badge/BaaaaaaaaaaarkingDog_Algorithm_Lecture-11B48A?style=flat-square&logo=Vimeo&logoColor=white"/></a>
+  <a href="https://www.acmicpc.net/"><img src="https://img.shields.io/badge/Baekjoon_Online_Judge-0076C0?style=flat-square&logo=Baidu&logoColor=white"/></a>
+</p>
+"""
+
 def main():
     content = HEADER + CURRENT_STATUS  # HEADER와 CURRENT_STATUS 합치기
     root_dirs = ["백준", "프로그래머스"]
@@ -79,6 +88,8 @@ def main():
                     content += f"| {display_number} | {display_problem} | - |\n"
 
             content += "\n</details>\n"
+
+    content += REFERENCES  # References 추가
 
     with open("README.md", "w", encoding="utf-8") as fd:
         fd.write(content)

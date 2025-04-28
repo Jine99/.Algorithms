@@ -10,7 +10,9 @@ HEADER = """#
 
 # HTML 코드 부분을 문자열로 포함하고, '📊 Current Status'를 중앙 정렬
 CURRENT_STATUS = """
+<p align="center">
 ## 📊 Current Status
+</p>
 <p align="center">
   <a href="https://solved.ac/profile/khkcejkms1"><img height="180em" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=khkcejkms1"/></a>
 </p>
@@ -18,7 +20,9 @@ CURRENT_STATUS = """
 
 # References 부분 추가
 REFERENCES = """
+<p align="center">
 ## 📚 References
+</p>
 <p align="center">
   <a href="https://blog.encrypted.gg/category/강좌/실전%20알고리즘"><img src="https://img.shields.io/badge/BaaaaaaaaaaarkingDog_Algorithm_Lecture-11B48A?style=flat-square&logo=Vimeo&logoColor=white"/></a>
   <a href="https://www.acmicpc.net/"><img src="https://img.shields.io/badge/Baekjoon_Online_Judge-0076C0?style=flat-square&logo=Baidu&logoColor=white"/></a>
@@ -34,7 +38,7 @@ def main():
         if not os.path.isdir(site_path):
             continue
 
-        content += f"\n## 📚 {site}\n"
+         content += f"\n<p align='center'>## 📚 {site}</p>\n"
 
         for difficulty in sorted(os.listdir(site_path)):
             diff_path = os.path.join(site_path, difficulty)

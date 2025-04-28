@@ -117,4 +117,8 @@ def main():
         # 📚 References 섹션 추가
         content += add_references_section()  # References 섹션을 함수로 추가
 
-    with open("README.md",
+    with open("README.md", "w", encoding="utf-8") as fd:
+        fd.write(content)
+
+if __name__ == "__main__":
+    main()

@@ -8,7 +8,7 @@ HEADER = """#
 # 백준, 프로그래머스 문제 풀이 목록
 """
 
-# HTML 코드 부분을 문자열로 포함하고, '📊 Current Status'를 중앙 정렬
+# 📊 Current Status를 중앙 정렬
 CURRENT_STATUS = """
 <p align="center">
   <h2>📊 Current Status</h2>  <!-- 제목을 HTML <h2> 태그로 감싸 크기 조정 -->
@@ -19,9 +19,19 @@ CURRENT_STATUS = """
 <hr>  <!-- 수평선 추가 -->
 """
 
+# 📚 백준을 중앙 정렬
+def generate_section(site):
+    return f"""
+<p align="center">
+  <h2>📚 {site}</h2>
+</p>
+"""
+
 # 📚 References를 중앙 정렬
 REFERENCES = """
-## 📚 References
+<p align="center">
+  <h2>📚 References</h2>
+</p>
 <p align="center">
   <a href="https://blog.encrypted.gg/category/강좌/실전%20알고리즘"><img src="https://img.shields.io/badge/BaaaaaaaaaaarkingDog_Algorithm_Lecture-11B48A?style=flat-square&logo=Vimeo&logoColor=white"/></a>
   <a href="https://www.acmicpc.net/"><img src="https://img.shields.io/badge/Baekjoon_Online_Judge-0076C0?style=flat-square&logo=Baidu&logoColor=white"/></a>
@@ -37,7 +47,7 @@ def main():
         if not os.path.isdir(site_path):
             continue
 
-        content += f"\n## 📚 {site}\n"
+        content += generate_section(site)  # 📚 {site} 중앙 정렬 섹션 추가
 
         for difficulty in sorted(os.listdir(site_path)):
             diff_path = os.path.join(site_path, difficulty)
@@ -92,7 +102,7 @@ def main():
 
             content += "\n</details>\n"
 
-    content += REFERENCES  # 📚 References 추가
+    content += REFERENCES  # 📚 References 중앙 정렬 추가
 
     with open("README.md", "w", encoding="utf-8") as fd:
         fd.write(content)

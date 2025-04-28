@@ -37,6 +37,9 @@ def main():
     content = HEADER + CURRENT_STATUS  # HEADER와 CURRENT_STATUS 합치기
     root_dirs = ["백준", "프로그래머스"]
 
+    # 난이도 순서 정의 (브론즈, 실버, 골드 순으로 정렬)
+    difficulty_order = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Ruby"]
+
     for site in root_dirs:
         site_path = os.path.join(".", site)
         if not os.path.isdir(site_path):
@@ -45,7 +48,7 @@ def main():
         # 📚 백준을 중앙 정렬하고 제목을 h2로 크기 조정
         content += f"\n<div align='center'>\n<h2>📚 {site}</h2>\n</div>\n"
 
-        for difficulty in sorted(os.listdir(site_path)):
+        for difficulty in sorted(os.listdir(site_path), key=lambda x: difficulty_order.index(x) if x in difficulty_order else float('inf')):
             diff_path = os.path.join(site_path, difficulty)
             if not os.path.isdir(diff_path):
                 continue

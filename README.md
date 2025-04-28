@@ -7,7 +7,6 @@
 <p align="center">
   <a href="https://solved.ac/profile/khkcejkms1"><img height="180em" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=khkcejkms1"/></a>
 </p>
-<hr>  <!-- 수평선 추가 -->
 
 <div align='center'>
 <h2>📚 백준</h2>

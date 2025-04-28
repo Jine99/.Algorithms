@@ -15,7 +15,7 @@
 <h2>📚 백준</h2>
 </div>
 <details>
-<summary><strong>🚀 Bronze</strong></summary>
+<summary><strong>🥉 Bronze</strong></summary>
 
 | 문제번호 | 문제 | 개념 |
 | -------- | ----- | ---- |
@@ -32,7 +32,7 @@
 
 </details>
 <details>
-<summary><strong>🚀 Silver</strong></summary>
+<summary><strong>🥈 Silver</strong></summary>
 
 | 문제번호 | 문제 | 개념 |
 | -------- | ----- | ---- |
@@ -45,7 +45,7 @@
 
 </details>
 <details>
-<summary><strong>🚀 Gold</strong></summary>
+<summary><strong>🥇 Gold</strong></summary>
 
 | 문제번호 | 문제 | 개념 |
 | -------- | ----- | ---- |
@@ -54,7 +54,7 @@
 
 </details>
 <details>
-<summary><strong>🚀 Platinum</strong></summary>
+<summary><strong>💎 Platinum</strong></summary>
 
 | 문제번호 | 문제 | 개념 |
 | -------- | ----- | ---- |

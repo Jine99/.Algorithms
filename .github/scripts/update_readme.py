@@ -45,7 +45,7 @@ difficulty_emojis = {
 
 def main():
     content = HEADER + CURRENT_STATUS  # HEADER와 CURRENT_STATUS 합치기
-    root_dirs = ["백준", "프로그래머스"]
+    root_dirs = ["Baekjoon", "Programmers"]
 
     # 난이도 순서 정의 (브론즈, 실버, 골드 순으로 정렬)
     difficulty_order = ["Bronze", "Silver", "Gold", "Platinum", "Diamond", "Ruby"]

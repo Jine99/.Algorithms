@@ -9,7 +9,9 @@
 </p>
 <hr>  <!-- 수평선 추가 -->
 
+<div align='center'>
 ## 📚 백준
+</div>
 <details>
 <summary><strong>🚀 Bronze</strong></summary>
 

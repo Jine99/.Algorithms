@@ -35,12 +35,12 @@ def add_references_section():
 
 # 난이도별 이모지 매핑
 difficulty_emojis = {
-    "Bronze": "🥉",
-    "Silver": "🥈",
-    "Gold": "🥇",
-    "Platinum": "💎",
-    "Diamond": "👑",
-    "Ruby": "🏆"
+    "Bronze": "🟫",
+    "Silver": "⬜", 
+    "Gold": "🟨",
+    "Platinum": "🟩",
+    "Diamond": "🟦",
+    "Ruby": "🟥"  
 }
 
 def main():

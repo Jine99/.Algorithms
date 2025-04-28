@@ -64,7 +64,7 @@ def main():
                 continue
 
             # 난이도별 이모지 추가
-            emoji = difficulty_emojis.get(difficulty, "🚀")
+            emoji = difficulty_emojis.get(difficulty, "🌟")
 
             content += f"<details>\n<summary><strong>{emoji} {difficulty}</strong></summary>\n\n"
             content += "| 문제번호 | 문제 | 개념 |\n"

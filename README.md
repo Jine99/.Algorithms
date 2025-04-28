@@ -2,13 +2,14 @@
 # 백준, 프로그래머스 문제 풀이 목록
 
 <p align="center">
-  ## 📊 Current Status
+  <h2>📊 Current Status</h2>  <!-- 제목을 HTML <h2> 태그로 감싸 크기 조정 -->
 </p>
 <p align="center">
   <a href="https://solved.ac/profile/khkcejkms1"><img height="180em" src="http://mazassumnida.wtf/api/v2/generate_badge?boj=khkcejkms1"/></a>
 </p>
+<hr>  <!-- 수평선 추가 -->
 
-<p align='center'>## 📚 백준</p>
+## 📚 백준
 <details>
 <summary><strong>🚀 Bronze</strong></summary>
 
@@ -57,9 +58,7 @@
 
 </details>
 
-<p align="center">
-  ## 📚 References
-</p>
+## 📚 References
 <p align="center">
   <a href="https://blog.encrypted.gg/category/강좌/실전%20알고리즘"><img src="https://img.shields.io/badge/BaaaaaaaaaaarkingDog_Algorithm_Lecture-11B48A?style=flat-square&logo=Vimeo&logoColor=white"/></a>
   <a href="https://www.acmicpc.net/"><img src="https://img.shields.io/badge/Baekjoon_Online_Judge-0076C0?style=flat-square&logo=Baidu&logoColor=white"/></a>

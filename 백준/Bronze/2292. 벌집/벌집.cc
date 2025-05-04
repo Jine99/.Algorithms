@@ -3,22 +3,12 @@ using namespace std;
 int main(void) {
     ios::sync_with_stdio(false);
     cin.tie(0);
-
-    int a;
-    int b = 1;
-    int c = 1;
+    int a, b = 1;
     cin >> a;
-    if (a >= 1) {
-
-        for (int i = 0; i < a; i++) {
-
-            b = b + (6 * i);
-            if (b >= a) {
-                c = i + 1;
-                break;
-            }
-
-        }
+    a -= 1;
+    while (a > 0) {
+        a -= 6 * b;
+        b++;
     }
-    cout << c;
+    cout << b;
 }

@@ -33,6 +33,7 @@
 | 2557 | [Hello World](./%EB%B0%B1%EC%A4%80/Bronze/2557.%E2%80%85Hello%E2%80%85World/README.md) | - |
 | 2588 | [곱셈](./%EB%B0%B1%EC%A4%80/Bronze/2588.%E2%80%85%EA%B3%B1%EC%85%88/README.md) | - |
 | 2675 | [문자열 반복](./%EB%B0%B1%EC%A4%80/Bronze/2675.%E2%80%85%EB%AC%B8%EC%9E%90%EC%97%B4%E2%80%85%EB%B0%98%EB%B3%B5/README.md) | - |
+| 2739 | [구구단](./%EB%B0%B1%EC%A4%80/Bronze/2739.%E2%80%85%EA%B5%AC%EA%B5%AC%EB%8B%A8/README.md) | - |
 | 3052 | [나머지](./%EB%B0%B1%EC%A4%80/Bronze/3052.%E2%80%85%EB%82%98%EB%A8%B8%EC%A7%80/README.md) | - |
 
 </details>

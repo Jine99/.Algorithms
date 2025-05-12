@@ -17,7 +17,7 @@
 <details>
 <summary><strong>🥉 Bronze</strong></summary>
 
-| 문제번호 | 문제 | 개념 |
+| 문제번호 | 문제 | 회고 |
 | -------- | ----- | ---- |
 | 1000 | [A＋B](./%EB%B0%B1%EC%A4%80/Bronze/1000.%E2%80%85A%EF%BC%8BB/README.md) | - |
 | 1001 | [A－B](./%EB%B0%B1%EC%A4%80/Bronze/1001.%E2%80%85A%EF%BC%8DB/README.md) | - |
@@ -52,7 +52,7 @@
 <details>
 <summary><strong>🥈 Silver</strong></summary>
 
-| 문제번호 | 문제 | 개념 |
+| 문제번호 | 문제 | 회고 |
 | -------- | ----- | ---- |
 | 1181 | [단어 정렬](./%EB%B0%B1%EC%A4%80/Silver/1181.%E2%80%85%EB%8B%A8%EC%96%B4%E2%80%85%EC%A0%95%EB%A0%AC/README.md) | [단어 정렬](./%EB%B0%B1%EC%A4%80/Silver/1181.%E2%80%85%EB%8B%A8%EC%96%B4%E2%80%85%EC%A0%95%EB%A0%AC/%EB%8B%A8%EC%96%B4%20%EC%A0%95%EB%A0%AC.md) |
 | 1406 | [에디터](./%EB%B0%B1%EC%A4%80/Silver/1406.%E2%80%85%EC%97%90%EB%94%94%ED%84%B0/README.md) | - |
@@ -66,7 +66,7 @@
 <details>
 <summary><strong>🥇 Gold</strong></summary>
 
-| 문제번호 | 문제 | 개념 |
+| 문제번호 | 문제 | 회고 |
 | -------- | ----- | ---- |
 | 2493 | [탑](./%EB%B0%B1%EC%A4%80/Gold/2493.%E2%80%85%ED%83%91/README.md) | - |
 | 2504 | [괄호의 값](./%EB%B0%B1%EC%A4%80/Gold/2504.%E2%80%85%EA%B4%84%ED%98%B8%EC%9D%98%E2%80%85%EA%B0%92/README.md) | - |
@@ -75,7 +75,7 @@
 <details>
 <summary><strong>💎 Platinum</strong></summary>
 
-| 문제번호 | 문제 | 개념 |
+| 문제번호 | 문제 | 회고 |
 | -------- | ----- | ---- |
 | 6549 | [히스토그램에서 가장 큰 직사각형](./%EB%B0%B1%EC%A4%80/Platinum/6549.%E2%80%85%ED%9E%88%EC%8A%A4%ED%86%A0%EA%B7%B8%EB%9E%A8%EC%97%90%EC%84%9C%E2%80%85%EA%B0%80%EC%9E%A5%E2%80%85%ED%81%B0%E2%80%85%EC%A7%81%EC%82%AC%EA%B0%81%ED%98%95/README.md) | - |
 

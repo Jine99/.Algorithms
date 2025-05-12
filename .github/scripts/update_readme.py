@@ -74,7 +74,7 @@ def main():
             emoji = difficulty_emojis.get(difficulty, "🚀")
 
             content += f"<details>\n<summary><strong>{emoji} {difficulty}</strong></summary>\n\n"
-            content += "| 문제번호 | 문제 | 개념 |\n"
+            content += "| 문제번호 | 문제 | 회고 |\n"
             content += "| -------- | ----- | ---- |\n"
 
             for problem_folder in sorted(os.listdir(diff_path)):

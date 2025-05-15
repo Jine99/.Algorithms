@@ -1,23 +1,25 @@
 #include<iostream>
-#include<unordered_map>
 
 using namespace std;
 
-unordered_map<int, int> dic;
+int arr[20000001];
 
 int main(void) {
     ios::sync_with_stdio(false);
     cin.tie(0);
 
-    int a, b, card;
+    int a, b;
     cin >> a;
     for (int i = 0; i < a; i++) {
-        cin >> card;
-        dic[card] += 1;
+        int c;
+        cin >> c;
+        arr[c + 10000000] += 1;
     }
     cin >> b;
     for (int i = 0; i < b; i++) {
-        cin >> card;
-        cout << dic[card] << " ";
+        int d;
+        cin >> d;
+        cout << arr[d + 10000000] << " ";
     }
+
 }

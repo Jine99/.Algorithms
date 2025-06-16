@@ -2,7 +2,7 @@
 
 using namespace std;
 
-bool bord[51][51];
+bool board[51][51];
 bool vis[51][51];
 
 int dx[4] = { 1,0,-1,0 };
@@ -19,7 +19,7 @@ void BFS(int x, int y) {
         int ny = y + dy[i];
         int nx = x + dx[i];
         if (nx < 0 || 0 > ny && nx >= m || n <= ny) continue;
-        if (bord[ny][nx] == 0 || vis[ny][nx] == 1)continue;
+        if (board[ny][nx] == 0 || vis[ny][nx] == 1)continue;
         BFS(nx, ny);
     }
 }
@@ -38,12 +38,12 @@ int main(void) {
         for (int i = 0; i < k; i++) {
             int x, y;
             cin >> x >> y;
-            bord[y][x] = 1;
+            board[y][x] = 1;
         }
 
         for (int y = 0; y < n; y++) {
             for (int x = 0; x < m; x++) {
-                if (bord[y][x] == 1 && vis[y][x] == 0) {
+                if (board[y][x] == 1 && vis[y][x] == 0) {
                     num++;
                     BFS(x, y);
                 }
@@ -51,7 +51,7 @@ int main(void) {
         }
         cout << num << "\n";
 
-        fill_n(bord[0], 51 * 51, 0);
+        fill_n(board[0], 51 * 51, 0);
         fill_n(vis[0], 51 * 51, 0);
     }
 }

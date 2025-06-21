@@ -34,7 +34,7 @@ jobs:
         python .github/scripts/update_readme.py
     - name: Commit changes
       run: |
-        git config --global user.name 'khkcejkms1'
+        git config --global user.name 'Jine99'
         git config --global user.email 'khkcejkms1@naver.com'
         git add -A
         git commit -am "auto update README.md" || echo "No changes to commit"
